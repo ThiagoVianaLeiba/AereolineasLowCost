@@ -4,10 +4,10 @@ Profesor: Damian Olaso
 
 Alumnos: 
 
--Maximo Rodriguez  -  MASTER
+-Maximo Rodriguez  -  TEAM
 
 -Thiago Viana Leiba  -  OWNER
 
--Ivan Naydenko  -  TEAM
+-Ivan Naydenko  -  MASTER
 
 -Thiago López  -  TEAM
