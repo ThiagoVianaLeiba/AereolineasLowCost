@@ -1,4 +1,3 @@
-¡De una, Thiago! Acá te dejo el paso a paso bien claro y directo para que tengas tu machete y sepas exactamente cómo encender el servidor y todo el sistema cuando lo abras en otra computadora:
 Paso 1: Activar XAMPP (Base de datos)
  * Abrí el panel de control de XAMPP en la computadora.
  * Hacé clic en el botón Start al lado de Apache.
