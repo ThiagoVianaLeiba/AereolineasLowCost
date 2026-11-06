@@ -20,6 +20,7 @@ Paso 4: Prender el Servidor Backend (Node.js)
    node server.js
 
  * ¿Cómo sabés que funcionó? La consola de la terminal te va a arrojar el mensaje confirmando que el servidor backend está corriendo y conectado a la base de datos de MySQL.
+
 Paso 5: Prender la Página Web (React)
  * Abrir otra pestaña o ventana nueva en la terminal de Visual Studio Code sin cerrar la anterior.
  * Ejecutá el comando para arrancar la interfaz visual:
