@@ -3,9 +3,11 @@ Paso 1: Activar XAMPP (Base de datos)
  * Hacé clic en el botón Start al lado de Apache.
  * Hacé clic en el botón Start al lado de MySQL.
  * ¿Cómo sabés que está bien? Ambos servicios tienen que quedar marcados con el fondo verde en el programa.
+
 Paso 2: Abrir el proyecto
  * Abrí Visual Studio Code.
  * Arrastrá o abrí la carpeta de tu proyecto (Aerolineas-Low-Cost) desde donde la tengas guardada (o clonala de tu GitHub).
+
 Paso 3: Instalar las dependencias (Solo si es una PC nueva)
 Si es la primera vez que abrís el proyecto en esa computadora, como la carpeta node_modules no se sube a GitHub para ahorrar espacio, tenés que descargarla de nuevo:
  * Abrí la terminal integrada en VS Code (abajo).
