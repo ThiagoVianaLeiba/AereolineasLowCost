@@ -1,0 +1,51 @@
+Query 1:
+
+TRUNCATE TABLE vuelos;
+
+USE aerolineas_db;
+
+
+TRUNCATE TABLE vuelos;
+
+INSERT INTO vuelos (origen, destino, ida, vuelta, pasajeros, codigo)
+VALUES 
+('Ezeiza (EZE)', 'Bariloche (BRC)', '2026-11-20', '2026-11-27', 1, 'EZE-BRC1'),
+('Ezeiza (EZE)', 'Iguazú (IGR)', '2026-11-22', '2026-11-25', 1, 'EZE-IGR2'),
+('Ezeiza (EZE)', 'Mendoza (MDZ)', '2026-11-25', '2026-11-30', 2, 'EZE-MDZ3');
+
+Query 2:
+
+USE aerolineas_db;
+
+INSERT INTO vuelos (origen, destino, ida, vuelta, pasajeros, codigo)
+VALUES 
+('Ezeiza (EZE)', 'Bariloche (BRC)', '2026-11-20', '2026-11-27', 1, 'EZE-BRC1'),
+('Ezeiza (EZE)', 'Iguazú (IGR)', '2026-11-22', '2026-11-25', 1, 'EZE-IGR2'),
+('Ezeiza (EZE)', 'Mendoza (MDZ)', '2026-11-25', '2026-11-30', 2, 'EZE-MDZ3');
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    dni VARCHAR(8) NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    rol VARCHAR(20) DEFAULT 'cliente'
+);
+
+Query 3:
+
+TRUNCATE TABLE reservas;
+
+Query 4:
+
+USE aerolineas_db;
+SELECT * FROM usuarios;
+
+Query 5:
+
+USE aerolineas_db;
+
+-- Actualizamos tu usuario para que tenga rol de administrador
+UPDATE usuarios 
+SET rol = 'admin' 
+WHERE email = 'ThiagoAdmin@gmail.com';
