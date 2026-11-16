@@ -1,0 +1,31 @@
+-- 1. Crear la base de datos si no existe
+CREATE DATABASE IF NOT EXISTS aerolineas_db;
+USE aerolineas_db;
+
+-- 2. Crear la tabla de usuarios
+CREATE TABLE IF NOT EXISTS usuarios (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre VARCHAR(100),
+  email VARCHAR(100),
+  dni VARCHAR(8),
+  password VARCHAR(100),
+  rol VARCHAR(20)
+);
+
+-- 3. Crear la tabla de vuelos (con precio integrado)
+CREATE TABLE IF NOT EXISTS vuelos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  origen VARCHAR(100),
+  destino VARCHAR(100),
+  ida VARCHAR(50),
+  vuelta VARCHAR(50),
+  pasajeros INT,
+  codigo VARCHAR(50),
+  precio VARCHAR(50)
+);
+
+-- 4. Insertar cuentas iniciales de los administradores (Vos y tus amigos)
+INSERT IGNORE INTO usuarios (id, nombre, email, dni, password, rol) VALUES 
+(1, 'ThiagoVianaLeiba', 'ThiagoAdmin@gmail.com', '48795776', 'Thiago22', 'admin'),
+(2, 'IvanNaydenko', 'IvanAdmin@gmail.com', '12345678', 'Ivan20', 'admin'),
+(3, 'ThiagoLopez', 'ThiagoLAdmin@gmail.com', '10101010', 'Lopez20', 'admin');
